@@ -1,4 +1,4 @@
-sif SHIELD_TESTKIT
+if SHIELD_TESTKIT
 
 config ZMK_KEYBOARD_NAME
     default "testkit"
