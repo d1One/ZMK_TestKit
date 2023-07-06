@@ -20,8 +20,8 @@
 
             bindings = <
     &kp A &kp B &kp C &kp D
-    &kp E &kp F &kp G &kp H
-    &kp I &kp J &kp K &kp L
+    &kp E &kp F &kp G &kp C_VOLUME_UP
+    &kp I &kp J &kp K &kp C_VOLUME_DOWN
     &kp M &kp N &kp I &mo 1
 
             >;
