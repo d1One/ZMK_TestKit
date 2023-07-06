@@ -1,5 +1,3 @@
-# where main config options are declared to later be enabled/disabled in .conf
-
 if SHIELD_TESTKIT
 
 config ZMK_KEYBOARD_NAME
