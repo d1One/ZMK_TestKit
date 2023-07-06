@@ -1,6 +1,22 @@
+# where main config options are declared to later be enabled/disabled in .conf
+
 if SHIELD_TESTKIT
 
 config ZMK_KEYBOARD_NAME
     default "testkit"
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+config SSD1306_REVERSE_MODE
+    default y
+
+endif # ZMK_DISPLAY
+
 
 endif
