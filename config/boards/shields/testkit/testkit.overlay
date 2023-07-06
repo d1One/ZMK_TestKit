@@ -29,7 +29,7 @@
         compatible = "alps,ec11";
         label = "Encoder";
         a-gpios = <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 02 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         resolution = <4>;
         status = "disabled";
     };
