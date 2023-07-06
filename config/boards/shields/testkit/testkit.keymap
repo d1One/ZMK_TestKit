@@ -20,9 +20,9 @@
         default_layer {
 
             bindings = <
-    &kp A &kp B &kp C &kp D
-    &kp E &kp F &kp G &kp C_VOLUME_UP
-    &kp I &kp J &kp K &kp C_VOLUME_DOWN
+    &kp A &kp B &kp C &out OUT_USB
+    &kp E &kp F &kp G &out OUT_BLE
+    &kp I &kp J &kp K &kp L
     &kp M &kp N &kp I &mo 1
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -31,10 +31,10 @@
 
         bt_layer {
             bindings = <
-    &none &none &none &none
-    &none &none &none &none
-    &none &none &none &bootloader
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+    &none        &none         &none       &none
+    &none        &none         &none       &bootloader
+    &none        &none         &none       &bt BT_CLR
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
