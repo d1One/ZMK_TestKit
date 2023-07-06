@@ -1,8 +1,3 @@
-/*
- * removed oled stuff,
- * https://github.com/d1One/zmk-config_2/blob/main/config/boards/shields/my_board/my_board.dtsi
- */
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
