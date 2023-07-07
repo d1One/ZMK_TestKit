@@ -5,7 +5,7 @@
 
 #define DEF 0
 #define NAV 1
-#define NAV 2
+#define MBT 2
 
 
 &encoder_1 {
