@@ -35,7 +35,7 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-         nav_layer {
+         navi_layer {
             label = "Navi";
              bindings = <
                 &tog NAVI       &kp KP_DIVIDE   &kp KP_MULTIPLY &kp KP_MINUS
