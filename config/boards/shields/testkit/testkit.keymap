@@ -3,6 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define DEFAULT 0
+#define NAVI    1
+
+#define NONE 0
+
 &encoder_1 {
     status = "okay";
 };
@@ -20,38 +25,25 @@
         default_layer {
             label = "def";
             bindings = <
-                &to 1           &kp A           &kp A           &kp A
-                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_ASTERISK
-                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS
-                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_PLUS
-                &kp C_MUTE      &kp KP_NUMBER_0 &kp KP_DOT      &kp KP_ENTER
+                &tog NAVI       &kp KP_DIVIDE   &kp KP_MULTIPLY &kp KP_MINUS
+                &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp KP_PLUS
+                &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp KP_PLUS
+                &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp RETURN
+                &kp NUMBER_0    &kp NUMBER_0    &kp DOT         &kp RETURN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-         func_layer {
-            label = "func";
+         nav_layer {
+            label = "Navi";
              bindings = <
-                &to 2           &&kp A          &kp A           &kp B
-                &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
-                &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
-                &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none
-                &kp C_MUTE      &none           &none           &none
-             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-         };
-
-         extra_layer {
-            label = "extra";
-             bindings = <
-                &to 0           &kp A           &kp A           &kp A
-                &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
-                &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
-                &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none
-                &kp C_MUTE      &none           &none           &none
-             >;
+                &tog NAVI       &kp KP_DIVIDE   &kp KP_MULTIPLY &kp KP_MINUS
+                &kp HOME        &kp UP          &kp PAGE_UP     &kp KP_PLUS
+                &kp LEFT        &none           &kp RIGHT       &kp KP_PLUS
+                &kp END         &kp DOWN        &kp PAGE_DOWN   &kp RETURN
+                &kp INSERT      &kp INSERT      &kp DEL         &kp RETURN
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
