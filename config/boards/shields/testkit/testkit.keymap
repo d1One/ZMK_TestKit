@@ -20,7 +20,7 @@
         default_layer {
             label = "def";
             bindings = <
-                &to 0           &to 1           &to 2          &kp A
+                &to 1           &kp A           &kp A           &kp A
                 &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_ASTERISK
                 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS
                 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_PLUS
@@ -33,7 +33,7 @@
          func_layer {
             label = "func";
              bindings = <
-                &to 0           &to 1           &to 2           &kp B
+                &to 2           &&kp A          &kp A           &kp B
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
                 &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
                 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none
@@ -46,7 +46,7 @@
          extra_layer {
             label = "extra";
              bindings = <
-                &to 0           &to 1           &to 2           &kp C
+                &to 0           &kp A           &kp A           &kp A
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE    &none
                 &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
                 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none
